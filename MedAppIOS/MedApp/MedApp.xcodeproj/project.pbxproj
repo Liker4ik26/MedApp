@@ -21,6 +21,7 @@
 		60D16C442B054D1A00107DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60D16C432B054D1A00107DE1 /* Assets.xcassets */; };
 		60D16C472B054D1A00107DE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60D16C462B054D1A00107DE1 /* Preview Assets.xcassets */; };
 		60D16C4E2B054D3C00107DE1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D16C4D2B054D3C00107DE1 /* Home.swift */; };
+		F7E393462B125C8C00217F2F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7E393452B125C8C00217F2F /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		60D16C432B054D1A00107DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60D16C462B054D1A00107DE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		60D16C4D2B054D3C00107DE1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F7E393452B125C8C00217F2F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		60D16C312B054D1900107DE1 = {
 			isa = PBXGroup;
 			children = (
+				F7E393452B125C8C00217F2F /* Localizable.strings */,
 				60D16C3C2B054D1900107DE1 /* MedApp */,
 				60D16C3B2B054D1900107DE1 /* Products */,
 			);
@@ -208,6 +211,7 @@
 				60D16C472B054D1A00107DE1 /* Preview Assets.xcassets in Resources */,
 				60CA2DA92B0695F40043D02B /* Poppins-Bold.ttf in Resources */,
 				60D16C442B054D1A00107DE1 /* Assets.xcassets in Resources */,
+				F7E393462B125C8C00217F2F /* Localizable.strings in Resources */,
 				60CA2DAC2B0695F40043D02B /* Poppins-SemiBold.ttf in Resources */,
 				60CA2DAA2B0695F40043D02B /* Poppins-Regular.ttf in Resources */,
 				60CA2DAB2B0695F40043D02B /* Poppins-Medium.ttf in Resources */,
@@ -362,7 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MedApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 5GTB5FT32Z;
+				DEVELOPMENT_TEAM = JVX7U43WRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MedApp/Info.plist;
@@ -371,6 +375,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MedApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 5GTB5FT32Z;
+				DEVELOPMENT_TEAM = JVX7U43WRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MedApp/Info.plist;
@@ -401,6 +406,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

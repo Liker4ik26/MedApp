@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  MedApp
+
+  Created by Liker4ik50 on 11/25/23.
+  
+*/
+"doctor_name" = "Dr. Joseph Brostito";
+"doctor_general" = "General doctor";
+"doctor_prof" = "Dental Specialist";
+"doctor_km" = "1.2 KM";
+"doctor_date" = "Sunday, 12 June";
+"hi" = "Hello,";
+"hi_user" = "Hi James";
+"viros" = "Covid 19";
+"doc" = "Doctor";
+"med" = "Medicin";
+"hospital" = "Hospital";
+"near_doctor" = "Near Doctor";
+"search" = "Search doctor or health issue";

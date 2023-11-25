@@ -2,7 +2,7 @@
 //  TabBarItem.swift
 //  MedApp
 //
-//  Created by Владислав Волков on 17.11.2023.
+//  Created by Liker4ik50 on 17.11.2023.
 //
 
 import SwiftUI
@@ -23,7 +23,7 @@ struct TabbarItem: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 24, height: 24)
-                        .foregroundStyle(.accent)
+                        .foregroundStyle(Color("AccentColor"))
                     if selected == title {
                         Text(title)
                             .font(.custom(FontsManager.Poppins.regular, size: 15))
@@ -35,7 +35,7 @@ struct TabbarItem: View {
         .opacity(selected == title ? 1 : 0.5)
         .padding(.vertical, 10)
         .padding(.horizontal, 12)
-        .background(selected == title ? .tabActiveBackground.opacity(0.12) : .backgroundPrimary)
+        .background(selected == title ? Color("tabActiveBackground").opacity(0.12) : Color("backgroundPrimary"))
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }

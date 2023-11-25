@@ -2,7 +2,7 @@
 //  MedAppApp.swift
 //  MedApp
 //
-//  Created by Владислав Волков on 16.11.2023.
+//  Created by Liker4ik50 on 16.11.2023.
 //
 
 import SwiftUI

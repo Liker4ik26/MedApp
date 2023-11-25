@@ -2,7 +2,7 @@
 //  DoctorRow.swift
 //  MedApp
 //
-//  Created by Владислав Волков on 17.11.2023.
+//  Created by Liker4ik50 on 17.11.2023.
 //
 
 import SwiftUI
@@ -17,21 +17,21 @@ struct DoctorRow: View {
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
                 VStack(alignment: .leading) {
-                    Text("Dr. Joseph Brostito")
+                    Text(NSLocalizedString("doctor_name", comment: ""))
                         .font(.custom(FontsManager.Poppins.bold, size: 16))
-                        .foregroundStyle(.textPrimary)
-                    Text("Dental Specialist")
+                        .foregroundStyle(Color("textPrimary"))
+                    Text(NSLocalizedString("doctor_prof", comment: ""))
                         .font(.custom(FontsManager.Poppins.regular, size: 14))
-                        .foregroundStyle(.textSecondary)
+                        .foregroundStyle(Color("textSecondary"))
                 }
                 Spacer()
                 HStack {
                     Image(systemName: "map")
                         .font(.body)
-                        .foregroundStyle(.textSecondary)
-                    Text("1.2 KM")
+                        .foregroundStyle(Color("textSecondary"))
+                    Text(NSLocalizedString("doctor_km", comment: ""))
                         .font(.custom(FontsManager.Poppins.regular, size: 14))
-                        .foregroundStyle(.textSecondary)
+                        .foregroundStyle(Color("textSecondary"))
                 }
             }
             
@@ -42,7 +42,7 @@ struct DoctorRow: View {
                     Image(systemName: "clock")
                         .font(.body)
                         .foregroundStyle(.orange)
-                    Text("Sunday, 12 June")
+                    Text(NSLocalizedString("doctor_date", comment: ""))
                         .font(.custom(FontsManager.Poppins.regular, size: 12))
                         .foregroundStyle(.orange)
                 }
@@ -51,10 +51,10 @@ struct DoctorRow: View {
                 HStack {
                     Image(systemName: "clock")
                         .font(.body)
-                        .foregroundStyle(.accent)
-                    Text("Sunday, 12 June")
+                        .foregroundStyle(Color("AccentColor"))
+                    Text(NSLocalizedString("doctor_date", comment: ""))
                         .font(.custom(FontsManager.Poppins.regular, size: 12))
-                        .foregroundStyle(.accent)
+                        .foregroundStyle(Color("AccentColor"))
                 }
                 
                 Spacer()
@@ -69,6 +69,8 @@ struct DoctorRow: View {
     }
 }
 
-#Preview {
-    DoctorRow()
+struct   DoctorRow_Previews: PreviewProvider {
+    static var previews: some View {
+        DoctorRow()
+    }
 }

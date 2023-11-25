@@ -2,7 +2,7 @@
 //  DoctorListView.swift
 //  MedApp
 //
-//  Created by Владислав Волков on 16.11.2023.
+//  Created by Liker4ik50 on 16.11.2023.
 //
 
 import SwiftUI
@@ -16,12 +16,12 @@ struct Home: View {
      
                     HStack {
                         VStack(alignment: .leading) {
-                            Text("Hello,")
+                            Text(NSLocalizedString("hi", comment: ""))
                                 .font(.custom(FontsManager.Poppins.regular, size: 16))
-                                .foregroundStyle(.textSecondary)
-                            Text("Hi James")
+                                .foregroundStyle(Color("textSecondary"))
+                            Text(NSLocalizedString("hi_user", comment: ""))
                                 .font(.custom(FontsManager.Poppins.bold, size: 20))
-                                .foregroundStyle(.textPrimary)
+                                .foregroundStyle(Color("textPrimary"))
                                 .bold()
                         }
                         
@@ -45,17 +45,17 @@ struct Home: View {
                                     .background(.white)
                                     .clipShape(Circle())
                                 VStack(alignment: .leading) {
-                                    Text("Dr. Imran Syahir")
+                                    Text(NSLocalizedString("doctor_name", comment: ""))
                                         .font(.custom(FontsManager.Poppins.bold, size: 16))
-                                        .foregroundStyle(.onPrimary)
-                                    Text("General Doctor")
+                                        .foregroundStyle(Color("onPrimary"))
+                                    Text(NSLocalizedString("doctor_general", comment: ""))
                                         .font(.custom(FontsManager.Poppins.regular, size: 14))
-                                        .foregroundStyle(.onPrimary)
+                                        .foregroundStyle(Color("onPrimary"))
                                         .opacity(0.7)
                                 }
                                 Spacer()
                                 Image(systemName: "chevron.right")
-                                    .foregroundStyle(.onPrimary)
+                                    .foregroundStyle(Color("onPrimary"))
                             }
                             
                             Divider()
@@ -67,9 +67,9 @@ struct Home: View {
                                     Image(systemName: "calendar")
                                         .font(.body)
                                         .foregroundStyle(.white)
-                                    Text("Sunday, 12 June")
+                                    Text(NSLocalizedString("doctor_date", comment: ""))
                                         .font(.custom(FontsManager.Poppins.regular, size: 12))
-                                        .foregroundStyle(.onPrimary)
+                                        .foregroundStyle(Color("onPrimary"))
                                 }
                                 
                                 Spacer()
@@ -78,15 +78,15 @@ struct Home: View {
                                     Image(systemName: "clock")
                                         .font(.body)
                                         .foregroundStyle(.white)
-                                    Text("Sunday, 12 June")
+                                    Text(NSLocalizedString("doctor_date", comment: ""))
                                         .font(.custom(FontsManager.Poppins.regular, size: 12))
-                                        .foregroundStyle(.onPrimary)
+                                        .foregroundStyle(Color("onPrimary"))
                                 }
                             }
                             .padding(.top, 8)
                         }
                         .padding(20)
-                        .background(.accent)
+                        .background(Color("AccentColor"))
                         .cornerRadius(12)
                     }
                     .buttonStyle(PlainButtonStyle())
@@ -94,33 +94,33 @@ struct Home: View {
 
                     HStack(spacing: 12) {
                         Image(systemName: "magnifyingglass")
-                            .foregroundStyle(.textSecondary)
-                        TextField("", text: $text, prompt: Text("Search doctor or health issue").foregroundColor(.textSecondary))
-                            .foregroundStyle(.textPrimary)
+                            .foregroundStyle(Color("textSecondary"))
+                        TextField("", text: $text, prompt: Text(NSLocalizedString("search", comment: "")).foregroundColor(Color("textSecondary")))
+                            .foregroundStyle(Color("textPrimary"))
                             .font(.custom(FontsManager.Poppins.regular, size: 16))
                     }
                     .padding(16)
-                    .background(.backgroundSecondary)
+                    .background(Color("backgroundSecondary"))
                     .cornerRadius(12)
                     .padding(.horizontal, 24)
                     .padding(.top, 20)
                     .padding(.bottom, 24)
         
                     HStack {
-                        CategoryView(categoryName: "Covid 19", iconName: "Covid")
+                        CategoryView(categoryName: NSLocalizedString("viros", comment: ""), iconName: "Covid")
                         Spacer()
-                        CategoryView(categoryName: "Doctor", iconName: "Doctor")
+                        CategoryView(categoryName: NSLocalizedString("doc", comment: ""), iconName: "Doctor")
                         Spacer()
-                        CategoryView(categoryName: "Medicine", iconName: "Medicine")
+                        CategoryView(categoryName: NSLocalizedString("med", comment: ""), iconName: "Medicine")
                         Spacer()
-                        CategoryView(categoryName: "Hospital", iconName: "Hospital")
+                        CategoryView(categoryName: NSLocalizedString("hospital", comment: ""), iconName: "Hospital")
                     }
                     .padding(.horizontal, 24)
                     .padding(.bottom, 32)
 
                     
                     VStack(alignment: .leading, spacing: 16) {
-                        Text("Near Doctor")
+                        Text( NSLocalizedString("near_doctor", comment: ""))
                             .font(.custom(FontsManager.Poppins.semibold, size: 16))
                         DoctorRow()
                         DoctorRow()
@@ -138,6 +138,8 @@ struct Home: View {
 }
 
 
-#Preview {
-    Home()
+struct  Home_Previews: PreviewProvider {
+    static var previews: some View {
+        Home()
+    }
 }

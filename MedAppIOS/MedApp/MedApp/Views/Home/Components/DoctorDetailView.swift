@@ -2,7 +2,7 @@
 //  DoctorDetailView.swift
 //  MedApp
 //
-//  Created by Владислав Волков on 17.11.2023.
+//  Created by Liker4ik50 on 17.11.2023.
 //
 
 import SwiftUI
@@ -13,6 +13,8 @@ struct DoctorDetailView: View {
     }
 }
 
-#Preview {
-    DoctorDetailView()
+struct DoctorDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DoctorDetailView()
+    }
 }

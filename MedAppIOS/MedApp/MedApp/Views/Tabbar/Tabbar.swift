@@ -2,7 +2,7 @@
 //  Tabbar.swift
 //  MedApp
 //
-//  Created by Владислав Волков on 17.11.2023.
+//  Created by Liker4ik50 on 17.11.2023.
 //
 
 import SwiftUI
@@ -48,7 +48,7 @@ struct Tabbar: View {
             .padding(.bottom, 5)
             .padding(.horizontal, 24)
             .frame(maxWidth: .infinity)
-            .background(.backgroundPrimary)
+            .background(Color("backgroundPrimary"))
             .overlay(
                 Rectangle()
                     .frame(height: 1)
@@ -59,7 +59,8 @@ struct Tabbar: View {
     }
 }
 
-
-#Preview {
-    Tabbar()
+struct  Tabbar_Previews: PreviewProvider {
+    static var previews: some View {
+        Tabbar()
+    }
 }
